@@ -8,7 +8,7 @@ Created on 25.04.2017
 import re
 
 
-import Witness
+import src.Witness 
 from numpy.core.tests.test_mem_overlap import xrange
 
 
@@ -26,7 +26,7 @@ class Array_Utils(object):
                 if len(list2Str_In[list_Index_1])>listIntColumns_In[int_Index_t]:
                     listRes.append(re.match(pattern = listStr_RegexFilters_In[int_Index_t], string = list2Str_In[list_Index_1][listIntColumns_In[int_Index_t]]))
             if len(listRes) and all(listRes):
-                print (strLocation + Witness.WitnessSys.clsStrWitnessValues + " found list at list index: " + str(list_Index_1))   
+                #print (strLocation + Witness.WitnessSys.clsStrWitnessValues + " found list at list index: " + str(list_Index_1))   
                 return list_Index_1
         return -1
 
@@ -41,7 +41,7 @@ class Array_Utils(object):
                 if len(list2Str_In[list_Index_1])>listIntColumns_In[int_Index_t]:
                     listRes.append(re.match(pattern = listStr_RegexFilters_In[int_Index_t], string = list2Str_In[list_Index_1][listIntColumns_In[int_Index_t]]))
             if len(listRes) and all(listRes):
-                print (strLocation + Witness.WitnessSys.clsStrWitnessValues + " found list at list index: " + str(list_Index_1))   
+                #print (strLocation + Witness.WitnessSys.clsStrWitnessValues + " found list at list index: " + str(list_Index_1))   
                 listOutput.append(list2Str_In[list_Index_1])
         return listOutput
 

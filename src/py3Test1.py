@@ -1420,6 +1420,42 @@ class Test1():
 'Over70Degrees', 
 'Over70Degrees']
     
+    clsListStr_SOC=['Below5Percent', 
+'5to19Percent', 
+'20to34Percent', 
+'35to49Percent', 
+'50to64Percent', 
+'65to79Percent', 
+'80to94Percent', 
+'Over95Percent', 
+'Below5Percent', 
+'5to19Percent', 
+'20to34Percent', 
+'35to49Percent', 
+'50to64Percent', 
+'65to79Percent', 
+'80to94Percent', 
+'Over95Percent', 
+'Below5Percent', 
+'5to19Percent', 
+'20to34Percent', 
+'35to49Percent', 
+'50to64Percent', 
+'65to79Percent', 
+'80to94Percent', 
+'Over95Percent', 
+'Below5Percent', 
+'5to19Percent', 
+'20to34Percent', 
+'35to49Percent', 
+'50to64Percent', 
+'65to79Percent', 
+'80to94Percent', 
+'Over95Percent', 
+'Below5Percent', 
+'5to19Percent', 
+'20to34Percent'] #['Below5Percent', '5to19Percent', '20to34Percent', '35to49Percent', '50to64Percent', '65to79Percent', '80to94Percent', 'Over95Percent']
+    
 if __name__ == '__main__':
     str1='0Below5Percent'
     clsStrReFilter_Digits20='\d{1,20}'
@@ -1427,5 +1463,7 @@ if __name__ == '__main__':
     print(re.findall(pattern = clsStrReFilter_Digits20, string = str1))
 
     
-    print(list(OrderedDict.fromkeys(Test1.clsListStr1)))
+    #print(list(OrderedDict.fromkeys(Test1.clsListStr_SOC)))
+    l1=[3,4,5]
+    print(l1[:-2])
     #print 'haha %d, nihao %s, to %d' %(2016, 'sun', 13)
